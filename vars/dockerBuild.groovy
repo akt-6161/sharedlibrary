@@ -47,7 +47,7 @@ pipeline {
 					stage('DEPLOY IMAGE') {
 						steps {
 						 sshagent (credentials: ['ssh_agent']) {
-								sh "ssh -o StrictHostKeyChecking=no -l ubuntu 172.31.32.94 1s"
+								sh "ssh -o StrictHostKeyChecking=no -l ubuntu 172.31.32.94 ls"
 							  }
 						}
 					}
